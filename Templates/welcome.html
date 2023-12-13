@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a app </title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        </style>
+
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Bienvenido Demo APP</h1>
+        <p>Gracias por unirte a nuestro servicio de reportes.</p>
+       <iframe title="Pokemons" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=4697f835-ff11-4b2c-846c-a8e27e4c5f7a&autoAuth=true&ctid=aa98adde-9d36-4c7a-bed2-a17d972c8bf9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+    <a href="{{ url_for('upload') }}" class="button">Enviar Archivo</a>
+    </form>
+</body>
+</html>
